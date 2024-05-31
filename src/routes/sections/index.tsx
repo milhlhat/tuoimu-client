@@ -16,51 +16,54 @@ import { HomePage } from './main';
 // ----------------------------------------------------------------------
 
 export default function Router() {
-  return useRoutes([
-    // SET INDEX PAGE WITH SKIP HOME PAGE
-    // {
-    //   path: '/',
-    //   element: <Navigate to={PATH_AFTER_LOGIN} replace />,
-    // },
+  return useRoutes(
+    [
+      // SET INDEX PAGE WITH SKIP HOME PAGE
+      // {
+      //   path: '/',
+      //   element: <Navigate to={PATH_AFTER_LOGIN} replace />,
+      // },
 
-    // ----------------------------------------------------------------------
+      // ----------------------------------------------------------------------
 
-    // SET INDEX PAGE WITH HOME PAGE
-    {
-      path: '/',
-      element: <HomePage />,
-    },
+      // SET INDEX PAGE WITH HOME PAGE
+      {
+        path: '/',
+        element: <HomePage />,
+      },
 
-    // Auth routes
-    // ...authRoutes,
-    // ...authDemoRoutes,
+      // Auth routes
+      // ...authRoutes,
+      // ...authDemoRoutes,
 
-    // // Dashboard routes
-    // ...dashboardRoutes,
+      // // Dashboard routes
+      // ...dashboardRoutes,
 
-    // // Main routes
-    // ...mainRoutes,
+      // // Main routes
+      // ...mainRoutes,
 
-    // // Components routes
-    // ...componentsRoutes,
+      // // Components routes
+      // ...componentsRoutes,
 
-    // No match 404
-    {
-      element: (
-        <CompactLayout>
-          <Suspense fallback={<SplashScreen />}>
-            <Outlet />
-          </Suspense>
-        </CompactLayout>
-      ),
-      children: [
-        { path: 'coming-soon', element: <ComingSoonPage /> },
-        { path: 'maintenance', element: <MaintenancePage /> },
-        { path: '500', element: <Page500 /> },
-        { path: '404', element: <Page404 /> },
-        { path: '403', element: <Page403 /> },
-      ],
-    },
-    { path: '*', element: <Navigate to="/404" replace /> },
-  ]);
+      // No match 404
+      {
+        element: (
+          <CompactLayout>
+            <Suspense fallback={<SplashScreen />}>
+              <Outlet />
+            </Suspense>
+          </CompactLayout>
+        ),
+        children: [
+          { path: 'coming-soon', element: <ComingSoonPage /> },
+          { path: 'maintenance', element: <MaintenancePage /> },
+          { path: '500', element: <Page500 /> },
+          { path: '404', element: <Page404 /> },
+          { path: '403', element: <Page403 /> },
+        ],
+      },
+      { path: '*', element: <Navigate to="/404" replace /> },
+    ],
+    {}
+  );
 }

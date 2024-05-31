@@ -18,6 +18,7 @@ export default defineConfig({
       },
     }),
   ],
+  base: 'https://milhlhat.github.io/tuoimu-client',
   resolve: {
     alias: [
       {
