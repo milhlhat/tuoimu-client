@@ -1,1 +1,0 @@
-import{j as t,a3 as i,a7 as s,at as e}from"./index-ASk09GZ2.js";import{u as r}from"./use-responsive-sI87qnVA.js";function w({children:n,disableAnimatedMobile:a=!0,...o}){return r("down","sm")&&a?t.jsx(i,{...o,children:n}):t.jsx(i,{component:s.div,initial:"initial",whileInView:"animate",viewport:{once:!0,amount:.3},variants:e(),...o,children:n})}export{w as M};
