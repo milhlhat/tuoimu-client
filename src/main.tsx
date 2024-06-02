@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
   <HelmetProvider>
-    <BrowserRouter basename="tuoimu-client">
+    <BrowserRouter>
       <Suspense>
         <App />
       </Suspense>

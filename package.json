@@ -1,9 +1,9 @@
 {
   "name": "tuoimu",
   "author": "milhlhat",
-  "homepage": "https://milhlhat.github.io/tuoimu-client",
   "version": "1.0.0",
-  "description": "Vite & TypeScript",
+  "homepage": "/",
+  "description": "Tuoimu.com",
   "private": true,
   "type": "module",
   "scripts": {
