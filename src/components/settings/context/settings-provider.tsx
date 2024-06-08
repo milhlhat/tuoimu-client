@@ -22,7 +22,7 @@ export function SettingsProvider({ children, defaultSettings }: SettingsProvider
 
   const [openDrawer, setOpenDrawer] = useState(false);
 
-  const isArabic = localStorageGetItem('i18nextLng') === 'ar';
+  const isArabic = localStorageGetItem('i18nextLang') === 'ar';
 
   useEffect(() => {
     if (isArabic) {

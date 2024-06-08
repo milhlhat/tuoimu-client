@@ -13,7 +13,7 @@ import translationAr from './langs/ar.json';
 
 // ----------------------------------------------------------------------
 
-const lng = localStorageGetItem('i18nextLng', defaultLang.value);
+const lng = localStorageGetItem('i18nextLang', defaultLang.value);
 
 i18n
   .use(LanguageDetector)

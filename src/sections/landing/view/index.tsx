@@ -221,6 +221,7 @@ export default function LandingView() {
                 fullWidth: true,
               },
             }}
+            views={['month', 'year']}
           />
 
           <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
