@@ -212,7 +212,7 @@ export default function LandingView() {
           <DatePicker
             label="Chọn ngày sinh âm lịch của bạn"
             value={date}
-            format="dd/MM/yyyy"
+            format="MM/yyyy"
             onChange={(newValue) => {
               changeDate(newValue);
             }}
