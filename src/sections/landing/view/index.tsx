@@ -210,7 +210,7 @@ export default function LandingView() {
           <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
 
           <DatePicker
-            label="Chọn ngày sinh âm lịch của bạn"
+            label="Chọn tháng sinh âm lịch của bạn"
             value={date}
             format="MM/yyyy"
             onChange={(newValue) => {
