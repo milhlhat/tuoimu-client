@@ -1,16 +1,15 @@
 pipeline {
-    agent { label 'master' }
-
-  tools { nodejs "nodejs" }
+    agent any
 
     stages {
         stage('Test npm') {
-      steps {
-        sh """
-          npm --version
-        """
-      }
-    }
+            steps {
+                sh '''
+                sudo apt install npm
+                npm --version
+                '''
+            }
+        }
         stage('Install') {
             steps {
                 sh 'npm install'
@@ -28,7 +27,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                sh 'docker build -t myapp .'
             }
         }
     }
