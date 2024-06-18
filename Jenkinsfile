@@ -5,7 +5,7 @@ pipeline {
         stage('Test npm') {
             steps {
                 sh '''
-                sudo apt install npm
+                node --version
                 npm --version
                 '''
             }
