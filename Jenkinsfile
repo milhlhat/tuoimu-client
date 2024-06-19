@@ -1,12 +1,13 @@
 pipeline {
+    agent any
     tools {
-        nodejs 'node'
+        nodejs '18'
     }
 
     stages {
         stage('Install') {
             steps {
-                sh 'npm install'
+                sh 'npm version'
             }
         }
         stage('Build') {
